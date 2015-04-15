@@ -11,13 +11,15 @@
 |
 */
 
-// Route::get('/', 'PagesController@index');
-// Route::get('about', 'PagesController@about');
+ Route::get('/', 'PagesController@index');
+ Route::get('about', 'PagesController@about');
+ Route::get('songs', 'SongsController@index');
+ Route::get('songs/{id}', 'SongsController@show');
 
-Route::get('/', function()
-	{
-		return 'Home page';
-	});
+//Route::get('/', function()
+//	{
+//		return 'Home page';
+//	});
 
 
 
